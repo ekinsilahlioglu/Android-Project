@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/tab_signup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/marvel_logo" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="USER NAME:"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <EditText
+                android:background="@android:color/darker_gray"
+                android:id="@+id/signup_name"
+                android:layout_marginLeft="5dp"
+                android:hint="Enter your name"
+                android:textStyle="bold"
+                android:text=""
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp" />
+
+
+        </TableRow>
+
+
+        <TableRow android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="USER MAIL:"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <EditText
+                android:background="@android:color/darker_gray"
+                android:id="@+id/signup_mail"
+                android:layout_marginLeft="5dp"
+                android:hint="Enter mail address"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp" />
+
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="USER PASSWORD:"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/signup_pass"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="5dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="button_signup"
+        android:text="SIGNUP"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+
+</LinearLayout>
